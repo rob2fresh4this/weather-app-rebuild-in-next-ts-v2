@@ -1,4 +1,8 @@
 export function getFromLocalStorage() {
+    if (typeof window === "undefined") {
+        return []; // Return an empty array during SSR
+    }
+
     console.log('Getting from local storage');
     const localStorageData = localStorage.getItem('CityORState');
     if (localStorageData === null) {
@@ -8,6 +12,10 @@ export function getFromLocalStorage() {
 }
 
 export function saveToLocalStorage(CityORStat: string) {
+    if (typeof window === "undefined") {
+        return; // Skip saving if running on the server
+    }
+
     console.log(`Saving ${CityORStat} to local storage`);
     const getCityOrState = getFromLocalStorage();
     if (!getCityOrState.includes(CityORStat)) {
@@ -17,6 +25,10 @@ export function saveToLocalStorage(CityORStat: string) {
 }
 
 export function removeFromLocalStorage(CityORStat: string) {
+    if (typeof window === "undefined") {
+        return; // Skip removing if running on the server
+    }
+
     console.log(`Removing ${CityORStat} from local storage`);
     const getCityOrState = getFromLocalStorage();
     const index = getCityOrState.indexOf(CityORStat);
@@ -25,6 +37,7 @@ export function removeFromLocalStorage(CityORStat: string) {
         localStorage.setItem('CityORState', JSON.stringify(getCityOrState));
     }
 }
+
 
 interface WeatherMain {
     temp: number;
