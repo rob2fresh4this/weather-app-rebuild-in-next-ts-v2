@@ -1,0 +1,112 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1618317040,
+            "main": {
+                "temp": 72.5,
+                "temp_min": 68,
+                "temp_max": 75,
+                "pressure": 1012,
+                "humidity": 65
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02d"
+                }
+            ],
+            "dt_txt": "2025-03-21 12:00:00"
+        },
+        {
+            "dt": 1618327840,
+            "main": {
+                "temp": 70.4,
+                "temp_min": 66,
+                "temp_max": 72,
+                "pressure": 1013,
+                "humidity": 67
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "scattered clouds",
+                    "icon": "03d"
+                }
+            ],
+            "dt_txt": "2025-03-22 12:00:00"
+        },
+        {
+            "dt": 1618338640,
+            "main": {
+                "temp": 69.8,
+                "temp_min": 65,
+                "temp_max": 71,
+                "pressure": 1014,
+                "humidity": 68
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "broken clouds",
+                    "icon": "04d"
+                }
+            ],
+            "dt_txt": "2025-03-23 12:00:00"
+        },
+        {
+            "dt": 1618349440,
+            "main": {
+                "temp": 67.1,
+                "temp_min": 62,
+                "temp_max": 69,
+                "pressure": 1015,
+                "humidity": 70
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04n"
+                }
+            ],
+            "dt_txt": "2025-03-24 12:00:00"
+        },
+        {
+            "dt": 1618360240,
+            "main": {
+                "temp": 65.4,
+                "temp_min": 60,
+                "temp_max": 67,
+                "pressure": 1016,
+                "humidity": 72
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02n"
+                }
+            ],
+            "dt_txt": "2025-03-25 12:00:00"
+        }
+    ],
+    "city": {
+        "id": 5392171,
+        "name": "Stockton",
+        "coord": {
+            "lon": -121.290779,
+            "lat": 37.957701
+        },
+        "country": "US",
+        "population": 291707
+    }
+}
